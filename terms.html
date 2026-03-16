@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — Writeblock</title>
+  <meta name="description" content="Writeblock Terms of Use. Read the terms and conditions for using the Writeblock app.">
+  <meta property="og:title" content="Terms of Use — Writeblock">
+  <meta property="og:description" content="Terms and conditions for using the Writeblock app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://writeblock.app/terms">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-surface: #f5f5f7;
+      --color-text: #1d1d1f;
+      --color-text-secondary: #6e6e73;
+      --color-text-tertiary: #86868b;
+      --color-accent: #0071e3;
+      --color-accent-hover: #0077ed;
+      --color-border: #d2d2d7;
+      --font-stack: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 980px;
+      --content-width: 720px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #000000;
+        --color-surface: #1c1c1e;
+        --color-text: #f5f5f7;
+        --color-text-secondary: #a1a1a6;
+        --color-text-tertiary: #6e6e73;
+        --color-accent: #2997ff;
+        --color-accent-hover: #2dc0ff;
+        --color-border: #38383a;
+      }
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ---- Layout ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      background: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+    }
+
+    .nav-logo {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-text);
+    }
+
+    /* Focus styles */
+    a:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    /* ---- Page Header ---- */
+    .page-header {
+      padding-top: 120px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(36px, 6vw, 48px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .page-header .last-updated {
+      font-size: 15px;
+      color: var(--color-text-secondary);
+    }
+
+    /* ---- Legal Content ---- */
+    .legal-content {
+      padding: 64px 0 120px;
+    }
+
+    .legal-content section {
+      margin-bottom: 48px;
+    }
+
+    .legal-content section:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-content h2 {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      padding-top: 8px;
+    }
+
+    .legal-content h3 {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      margin-top: 32px;
+    }
+
+    .legal-content p {
+      font-size: 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .legal-content ul, .legal-content ol {
+      margin-bottom: 16px;
+      padding-left: 0;
+    }
+
+    .legal-content ul {
+      list-style: none;
+    }
+
+    .legal-content ol {
+      list-style: none;
+      counter-reset: list-counter;
+    }
+
+    .legal-content ul li,
+    .legal-content ol li {
+      font-size: 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      padding: 4px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .legal-content ul li::before {
+      content: "\2022";
+      color: var(--color-text-tertiary);
+      position: absolute;
+      left: 0;
+    }
+
+    .legal-content ol li {
+      counter-increment: list-counter;
+    }
+
+    .legal-content ol li::before {
+      content: counter(list-counter) ".";
+      color: var(--color-text-tertiary);
+      position: absolute;
+      left: 0;
+      font-weight: 500;
+    }
+
+    .legal-content a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .legal-content a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-content .summary-box {
+      background: var(--color-surface);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .legal-content .summary-box p {
+      font-size: 17px;
+      color: var(--color-text);
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    /* ---- Back Link ---- */
+    .back-link {
+      padding: 48px 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .back-link a {
+      font-size: 15px;
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 32px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-tagline {
+      font-size: 14px;
+      color: var(--color-text-tertiary);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--color-text-tertiary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-text);
+    }
+
+    .footer-copy {
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      color: var(--color-text-tertiary);
+      margin-top: 16px;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 16px;
+      }
+
+      .page-header {
+        padding-top: 100px;
+        padding-bottom: 36px;
+      }
+
+      .legal-content {
+        padding: 48px 0 80px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-header {
+        padding-top: 88px;
+      }
+
+      .legal-content .summary-box {
+        padding: 20px 22px;
+      }
+    }
+
+    /* ---- Reduce motion ---- */
+    @media (prefers-reduced-motion: reduce) {
+      .nav-links a,
+      .footer-links a,
+      .legal-content a,
+      .back-link a {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">Writeblock</a>
+      <ul class="nav-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html" aria-current="page">Terms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="content">
+        <h1>Terms of Use</h1>
+        <p class="last-updated">Last updated: March 16, 2026</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Content -->
+  <main class="legal-content">
+    <div class="container">
+      <div class="content">
+
+        <div class="summary-box">
+          <p>By using Writeblock, you agree to these terms. Your content is yours. The app is provided as-is.</p>
+        </div>
+
+        <section>
+          <h2>1. Acceptance of Terms</h2>
+          <p>By downloading, installing, or using Writeblock ("the app"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree to these Terms, do not use the app.</p>
+          <p>These Terms constitute a legal agreement between you and Writeblock ("we," "us," or "our"). We reserve the right to update these Terms at any time. Continued use of the app after changes are posted constitutes acceptance of the revised Terms.</p>
+        </section>
+
+        <section>
+          <h2>2. Description of Service</h2>
+          <p>Writeblock is a habit-forming app that helps you build a daily journaling practice by blocking selected apps on your device until you write a journal entry. The app uses Apple's Screen Time API (FamilyControls framework) to manage app restrictions.</p>
+          <p>Writeblock is designed as a personal productivity tool. It is not a substitute for professional mental health services or treatment.</p>
+        </section>
+
+        <section>
+          <h2>3. Eligibility</h2>
+          <p>You must be at least 13 years of age to use Writeblock. By using the app, you represent that you meet this age requirement. If you are under 18, you should review these Terms with a parent or guardian.</p>
+        </section>
+
+        <section>
+          <h2>4. Permitted Use</h2>
+          <p>Writeblock is licensed for your personal, non-commercial use only. You agree not to:</p>
+          <ul>
+            <li>Reverse engineer, decompile, or disassemble any part of the app</li>
+            <li>Modify, adapt, or create derivative works based on the app</li>
+            <li>Distribute, sublicense, lease, or lend the app to third parties</li>
+            <li>Use the app for any unlawful purpose or in violation of applicable laws</li>
+            <li>Attempt to circumvent or disable the app's security features or app-blocking functionality</li>
+            <li>Use the app in a manner that could damage, disable, or impair the functioning of your device</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Your Content</h2>
+          <p>You retain full ownership of all journal entries and content you create within Writeblock. We do not claim any rights to your content.</p>
+          <p>Since all content is stored locally on your device (or in your personal iCloud account if you enable sync), we do not have access to, and cannot view, your journal entries. You are solely responsible for the content you create and for maintaining backups of your data.</p>
+        </section>
+
+        <section>
+          <h2>6. In-App Purchases</h2>
+
+          <h3>Pro Upgrade</h3>
+          <p>Writeblock offers a Pro upgrade as a one-time purchase for $7.99 (USD). The Pro upgrade unlocks additional features including unlimited app blocking, App Lock, iCloud sync, and themes.</p>
+
+          <h3>Payment and Billing</h3>
+          <p>All purchases are processed through the Apple App Store. By making a purchase, you agree to Apple's <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener noreferrer">terms and conditions</a> for App Store transactions.</p>
+
+          <h3>Refunds</h3>
+          <p>All refund requests are handled by Apple in accordance with Apple's refund policy. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>. We do not process refunds directly.</p>
+        </section>
+
+        <section>
+          <h2>7. Intellectual Property</h2>
+          <p>The Writeblock app, including its design, code, graphics, logos, and user interface, is the intellectual property of Writeblock and is protected by applicable copyright and trademark laws.</p>
+          <p>As stated in Section 5, all journal content you create within the app remains your property.</p>
+        </section>
+
+        <section>
+          <h2>8. Screen Time API and App Blocking</h2>
+          <p>Writeblock's core functionality relies on Apple's Screen Time API (FamilyControls framework). Please be aware that:</p>
+          <ul>
+            <li>App blocking functionality is subject to Apple's policies and technical requirements, which may change at any time</li>
+            <li>Changes to iOS or the Screen Time API may affect the app's ability to block or unblock apps</li>
+            <li>We are not responsible for any changes Apple makes to the Screen Time API that may impact the app's functionality</li>
+            <li>The app requires Screen Time permissions to function; revoking these permissions will disable app blocking features</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>9. Disclaimer of Warranties</h2>
+          <p>Writeblock is provided on an "as is" and "as available" basis without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+          <p>We do not warrant that:</p>
+          <ul>
+            <li>The app will function uninterrupted or error-free</li>
+            <li>Defects will be corrected in a timely manner</li>
+            <li>The app will meet your specific requirements or expectations</li>
+            <li>Your data will be preserved in all circumstances</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>10. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by applicable law, Writeblock and its developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
+          <ul>
+            <li>Loss of data or journal entries</li>
+            <li>Loss of profits or revenue</li>
+            <li>Inability to access apps on your device</li>
+            <li>Any damages arising from the use or inability to use the app</li>
+          </ul>
+          <p>Our total liability for any claim arising from or related to the app shall not exceed the amount you paid for the app (if any).</p>
+        </section>
+
+        <section>
+          <h2>11. Indemnification</h2>
+          <p>You agree to indemnify and hold harmless Writeblock and its developer from any claims, losses, damages, liabilities, and expenses (including attorney's fees) arising from your use of the app or your violation of these Terms.</p>
+        </section>
+
+        <section>
+          <h2>12. Termination</h2>
+          <p>You may stop using Writeblock at any time by deleting the app from your device. Upon deletion, all locally stored data will be removed.</p>
+          <p>We reserve the right to discontinue the app or any of its features at any time, with or without notice.</p>
+        </section>
+
+        <section>
+          <h2>13. Governing Law</h2>
+          <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Korea, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the app shall be subject to the exclusive jurisdiction of the courts of the Republic of Korea.</p>
+        </section>
+
+        <section>
+          <h2>14. Severability</h2>
+          <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+        </section>
+
+        <section>
+          <h2>15. Changes to These Terms</h2>
+          <p>We may update these Terms from time to time. Changes will be posted on this page with an updated "Last updated" date. Your continued use of the app after any modifications constitutes acceptance of the updated Terms.</p>
+        </section>
+
+        <section>
+          <h2>16. Contact</h2>
+          <p>If you have any questions about these Terms, please contact us at <a href="mailto:privacy@writeblock.app">privacy@writeblock.app</a>.</p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Back Link -->
+  <div class="back-link">
+    <div class="container">
+      <div class="content">
+        <a href="index.html">&larr; Back to Writeblock</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-tagline">Writeblock &mdash; A habit engine, not a diary app.</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Writeblock</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

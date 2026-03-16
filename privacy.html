@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Writeblock</title>
+  <meta name="description" content="Writeblock Privacy Policy. No data collection, no servers, no tracking. Your journal stays on your device.">
+  <meta property="og:title" content="Privacy Policy — Writeblock">
+  <meta property="og:description" content="Writeblock Privacy Policy. No data collection, no servers, no tracking.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://writeblock.app/privacy">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-surface: #f5f5f7;
+      --color-text: #1d1d1f;
+      --color-text-secondary: #6e6e73;
+      --color-text-tertiary: #86868b;
+      --color-accent: #0071e3;
+      --color-accent-hover: #0077ed;
+      --color-border: #d2d2d7;
+      --font-stack: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-width: 980px;
+      --content-width: 720px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #000000;
+        --color-surface: #1c1c1e;
+        --color-text: #f5f5f7;
+        --color-text-secondary: #a1a1a6;
+        --color-text-tertiary: #6e6e73;
+        --color-accent: #2997ff;
+        --color-accent-hover: #2dc0ff;
+        --color-border: #38383a;
+      }
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* ---- Layout ---- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--color-border);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      background: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 48px;
+    }
+
+    .nav-logo {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--color-text);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-text);
+    }
+
+    /* Focus styles */
+    a:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    /* ---- Page Header ---- */
+    .page-header {
+      padding-top: 120px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .page-header h1 {
+      font-size: clamp(36px, 6vw, 48px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .page-header .last-updated {
+      font-size: 15px;
+      color: var(--color-text-secondary);
+    }
+
+    /* ---- Legal Content ---- */
+    .legal-content {
+      padding: 64px 0 120px;
+    }
+
+    .legal-content section {
+      margin-bottom: 48px;
+    }
+
+    .legal-content section:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-content h2 {
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      padding-top: 8px;
+    }
+
+    .legal-content h3 {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      margin-top: 32px;
+    }
+
+    .legal-content p {
+      font-size: 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .legal-content ul {
+      list-style: none;
+      margin-bottom: 16px;
+      padding-left: 0;
+    }
+
+    .legal-content ul li {
+      font-size: 16px;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      padding: 4px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .legal-content ul li::before {
+      content: "\2022";
+      color: var(--color-text-tertiary);
+      position: absolute;
+      left: 0;
+    }
+
+    .legal-content a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .legal-content a:hover {
+      text-decoration: underline;
+    }
+
+    .legal-content .summary-box {
+      background: var(--color-surface);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+
+    .legal-content .summary-box p {
+      font-size: 17px;
+      color: var(--color-text);
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    /* ---- Back Link ---- */
+    .back-link {
+      padding: 48px 0;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .back-link a {
+      font-size: 15px;
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      border-top: 1px solid var(--color-border);
+      padding: 32px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-tagline {
+      font-size: 14px;
+      color: var(--color-text-tertiary);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--color-text-tertiary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-text);
+    }
+
+    .footer-copy {
+      width: 100%;
+      text-align: center;
+      font-size: 13px;
+      color: var(--color-text-tertiary);
+      margin-top: 16px;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      .nav-links {
+        gap: 16px;
+      }
+
+      .page-header {
+        padding-top: 100px;
+        padding-bottom: 36px;
+      }
+
+      .legal-content {
+        padding: 48px 0 80px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .page-header {
+        padding-top: 88px;
+      }
+
+      .legal-content .summary-box {
+        padding: 20px 22px;
+      }
+    }
+
+    /* ---- Reduce motion ---- */
+    @media (prefers-reduced-motion: reduce) {
+      .nav-links a,
+      .footer-links a,
+      .legal-content a,
+      .back-link a {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">Writeblock</a>
+      <ul class="nav-links">
+        <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: March 16, 2026</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Content -->
+  <main class="legal-content">
+    <div class="container">
+      <div class="content">
+
+        <div class="summary-box">
+          <p>Writeblock does not collect, store, or transmit any of your personal data. Everything stays on your device.</p>
+        </div>
+
+        <section>
+          <h2>Overview</h2>
+          <p>Writeblock ("we," "our," or "the app") is a habit-forming journaling app that blocks selected apps until you write a journal entry. This Privacy Policy explains how we handle your information.</p>
+          <p>The short version: we don't collect any data. There are no servers, no accounts, and no tracking. Your journal entries and app preferences remain entirely on your device.</p>
+        </section>
+
+        <section>
+          <h2>Information We Collect</h2>
+          <p>None. Writeblock does not collect, transmit, or store any personal information on external servers. We do not require an account, email address, or any form of registration to use the app.</p>
+        </section>
+
+        <section>
+          <h2>Local Data Storage</h2>
+          <p>All data created within Writeblock is stored locally on your device using Apple's Core Data framework. This includes:</p>
+          <ul>
+            <li>Journal entries you write</li>
+            <li>Your app blocking preferences and schedule</li>
+            <li>Streak and usage statistics</li>
+            <li>App settings and preferences</li>
+          </ul>
+          <p>This data never leaves your device unless you explicitly choose to export it or enable iCloud sync.</p>
+        </section>
+
+        <section>
+          <h2>iCloud Sync</h2>
+          <p>Pro users may optionally enable iCloud sync to synchronize their journal entries across Apple devices. When enabled:</p>
+          <ul>
+            <li>Your data is stored in your personal iCloud account via Apple's CloudKit framework</li>
+            <li>The data is protected by Apple's security and privacy measures</li>
+            <li>We (the developer) cannot access your iCloud data</li>
+            <li>Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> governs iCloud data handling</li>
+          </ul>
+          <p>iCloud sync is optional and disabled by default. You can enable or disable it at any time in the app settings.</p>
+        </section>
+
+        <section>
+          <h2>Screen Time API (FamilyControls)</h2>
+          <p>Writeblock uses Apple's Screen Time API (FamilyControls framework) to block and unblock apps on your device. Regarding this functionality:</p>
+          <ul>
+            <li>The list of apps you choose to block is stored only on your device</li>
+            <li>App selection data is represented by opaque tokens that cannot be reverse-engineered into app identifiers</li>
+            <li>This data is never transmitted to our servers (we have none) or to any third party</li>
+            <li>Apple's privacy architecture ensures that neither we nor Apple can see which specific apps you have selected to block</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Analytics and Tracking</h2>
+          <p>Writeblock does not use any analytics or tracking services. We do not integrate with Google Analytics, Firebase, Mixpanel, or any other analytics platform. There are no tracking pixels, no behavioral analytics, and no usage telemetry of any kind.</p>
+        </section>
+
+        <section>
+          <h2>Advertising</h2>
+          <p>Writeblock does not display advertisements. We do not integrate with any advertising networks or services.</p>
+        </section>
+
+        <section>
+          <h2>Third-Party Services</h2>
+          <p>Writeblock integrates with the following Apple services only:</p>
+          <ul>
+            <li><strong>Apple StoreKit</strong> &mdash; for processing in-app purchases (Pro upgrade). Payment information is handled entirely by Apple and is not accessible to us.</li>
+            <li><strong>Apple CloudKit</strong> &mdash; for optional iCloud sync (Pro feature). Data is stored in your personal iCloud account under Apple's privacy protections.</li>
+          </ul>
+          <p>We do not use any other third-party services, SDKs, or frameworks that collect user data.</p>
+        </section>
+
+        <section>
+          <h2>Data Export</h2>
+          <p>You can export all of your journal entries at any time in TXT or JSON format. This gives you full control over your data and the ability to migrate to another service whenever you choose.</p>
+        </section>
+
+        <section>
+          <h2>Data Deletion</h2>
+          <p>You have complete control over your data:</p>
+          <ul>
+            <li><strong>In-app deletion</strong> &mdash; Use the "Delete All Data" option in Settings to permanently erase all journal entries and app data</li>
+            <li><strong>App deletion</strong> &mdash; Uninstalling Writeblock from your device removes all locally stored data</li>
+            <li><strong>iCloud data</strong> &mdash; If you used iCloud sync, you can manage your iCloud data through your device's iCloud settings</li>
+          </ul>
+          <p>Since we do not store data on any servers, there is no account to delete or remote data to request removal of.</p>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>Writeblock is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. Since we do not collect any personal information from any user, this concern does not apply in practice.</p>
+        </section>
+
+        <section>
+          <h2>Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@writeblock.app">privacy@writeblock.app</a>.</p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Back Link -->
+  <div class="back-link">
+    <div class="container">
+      <div class="content">
+        <a href="index.html">&larr; Back to Writeblock</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-tagline">Writeblock &mdash; A habit engine, not a diary app.</p>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Writeblock</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
