@@ -8,10 +8,50 @@
   <meta property="og:title" content="Writeblock — Block Apps Until You Journal">
   <meta property="og:description" content="Your dopamine apps stay locked until you write. 50 characters. That's all it takes.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://writeblock.app">
+  <meta property="og:url" content="https://writeblock.app/">
+  <meta property="og:image" content="https://writeblock.app/og-image.png">
+  <meta property="og:site_name" content="Writeblock">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Writeblock — Block Apps Until You Journal">
+  <meta name="twitter:description" content="Your dopamine apps stay locked until you write. 50 characters. That's all it takes.">
+  <meta name="twitter:image" content="https://writeblock.app/og-image.png">
+  <link rel="canonical" href="https://writeblock.app/">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Writeblock",
+    "description": "Block your dopamine apps until you journal. 50 characters is all it takes to unlock.",
+    "url": "https://writeblock.app/",
+    "applicationCategory": "LifestyleApplication",
+    "operatingSystem": "iOS",
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free plan — Block 2 apps, daily journaling, streak tracking, export"
+      },
+      {
+        "@type": "Offer",
+        "price": "7.99",
+        "priceCurrency": "USD",
+        "description": "Pro — One-time purchase for unlimited app blocking, App Lock, iCloud sync, themes"
+      }
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Writeblock",
+      "url": "https://writeblock.app/"
+    }
+  }
+  </script>
   <style>
     :root {
       --color-bg: #ffffff;
@@ -145,10 +185,13 @@
       text-align: center;
     }
 
-    .hero-icon {
-      font-size: 64px;
-      margin-bottom: 24px;
+    .hero-image {
+      max-width: 520px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto 32px;
       display: block;
+      border-radius: 16px;
       animation: fadeInUp 0.8s ease-out;
     }
 
@@ -560,8 +603,8 @@
         padding-top: 140px;
       }
 
-      .hero-icon {
-        font-size: 48px;
+      .hero-image {
+        max-width: 360px;
       }
 
       .feature-card {
@@ -576,7 +619,7 @@
         scroll-behavior: auto;
       }
 
-      .hero-icon,
+      .hero-image,
       .hero h1,
       .hero .tagline,
       .hero .subtext,
@@ -601,9 +644,9 @@
 <body>
 
   <!-- Nav -->
-  <nav>
+  <nav aria-label="Main navigation">
     <div class="container">
-      <a href="#" class="nav-logo">Writeblock</a>
+      <a href="/" class="nav-logo">Writeblock</a>
       <ul class="nav-links">
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#features">Features</a></li>
@@ -613,10 +656,12 @@
     </div>
   </nav>
 
+  <main>
+
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <span class="hero-icon" aria-hidden="true">🔒✏️</span>
+      <img src="og-image.png" alt="Writeblock — Block Apps Until You Journal" class="hero-image">
       <h1>Writeblock</h1>
       <p class="tagline">Block Apps Until You Journal</p>
       <p class="subtext">Got writer's block? No &mdash; your apps are blocked until you write.</p>
@@ -677,12 +722,12 @@
         <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">🔐</span>
           <h3>Your data stays on your device</h3>
-          <p>No servers, no cloud, no tracking. Your journal never leaves your iPhone.</p>
+          <p>No servers, no tracking. Your journal never leaves your iPhone.</p>
         </div>
         <div class="feature-card fade-in">
-          <span class="feature-icon" aria-hidden="true">📤</span>
-          <h3>Export anytime</h3>
-          <p>Your entries are always yours. Export in TXT or JSON whenever you want.</p>
+          <span class="feature-icon" aria-hidden="true">📸</span>
+          <h3>Photos &amp; voice</h3>
+          <p>Attach photos or record voice memos alongside your journal. Text is required to unlock &mdash; media is a bonus.</p>
         </div>
         <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">🔥</span>
@@ -690,14 +735,24 @@
           <p>Watch your journaling habit grow day by day. Stay motivated with your streak.</p>
         </div>
         <div class="feature-card fade-in">
+          <span class="feature-icon" aria-hidden="true">📱</span>
+          <h3>Live Activity</h3>
+          <p>See your block status right on the Lock Screen and Dynamic Island. Always know where you stand.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <span class="feature-icon" aria-hidden="true">🆘</span>
+          <h3>Emergency unlock</h3>
+          <p>Need an app right now? Unlock for 5 minutes, up to 3 times a day. Life happens.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <span class="feature-icon" aria-hidden="true">📤</span>
+          <h3>Export anytime</h3>
+          <p>Your entries are always yours. Export as Markdown with all photos and voice memos.</p>
+        </div>
+        <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">🎓</span>
           <h3>Designed to graduate</h3>
           <p>Build the habit, then move to any journaling app you love. We won't hold you hostage.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <span class="feature-icon" aria-hidden="true">🌙</span>
-          <h3>Night mode friendly</h3>
-          <p>Write comfortably at night. Writeblock adapts to your system appearance.</p>
         </div>
       </div>
     </div>
@@ -721,6 +776,7 @@
             <li>Block 2 apps</li>
             <li>Daily journaling</li>
             <li>Streak tracking</li>
+            <li>All themes</li>
             <li>Export your data</li>
           </ul>
         </div>
@@ -730,9 +786,8 @@
           <div class="price-period">One-time purchase</div>
           <ul class="price-features">
             <li>Unlimited app blocking</li>
-            <li>App Lock</li>
+            <li>App Lock (Face ID / PIN)</li>
             <li>iCloud sync</li>
-            <li>Themes</li>
             <li>Everything in Free</li>
           </ul>
         </div>
@@ -775,6 +830,8 @@
       </span>
     </div>
   </section>
+
+  </main>
 
   <!-- Footer -->
   <footer>
