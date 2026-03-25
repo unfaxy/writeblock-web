@@ -1,0 +1,47 @@
+# Writeblock
+
+> Block Apps Until You Journal
+
+Writeblock is an iOS app that locks your dopamine apps (social media, games, etc.) until you write a journal entry. Just 50 characters — that's all it takes to unlock.
+
+## Core Concept
+
+- Your chosen apps get blocked at a set time (default 10 PM)
+- Write 50+ characters to unlock them instantly
+- No account, no server, no tracking — everything stays on your iPhone
+
+## How It Works
+
+1. Choose which apps to block after your set time
+2. Write at least 50 characters in your journal
+3. Apps unlock immediately
+
+## Features
+
+- **No account needed**: Install and start immediately
+- **Privacy-first**: No servers, no cloud, no data collection
+- **Photos & voice**: Attach photos or record voice memos alongside your journal
+- **Streak tracking**: Track your daily journaling streak
+- **Live Activity**: See block status on Lock Screen and Dynamic Island
+- **Emergency unlock**: 5-minute temporary unlock, up to 3 times per day
+- **Export**: Markdown format with all attachments (photos, voice memos)
+- **Designed to graduate**: Build the habit, then move to any journaling app
+
+## Pricing
+
+- **Free**: Block 2 apps, daily journaling, streak tracking, all themes, export
+- **Pro ($7.99 one-time)**: Unlimited app blocking, App Lock (Face ID/PIN), iCloud sync
+
+## Links
+
+- Website: https://writeblock.app
+- Privacy Policy: https://writeblock.app/privacy.html
+- Terms of Use: https://writeblock.app/terms.html
+
+## Technical Details
+
+- Platform: iOS (16+)
+- Built with: Swift, SwiftUI
+- Data storage: On-device (Core Data), optional iCloud sync (Pro)
+- No backend servers, no Firebase, no analytics
+- Screen Time API for app blocking
