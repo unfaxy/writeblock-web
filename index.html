@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Writeblock — Block Apps Until You Journal</title>
-  <meta name="description" content="Got writer's block? No — your apps are blocked until you write. Writeblock locks your dopamine apps until you journal 50 characters. No account, no cloud, no tracking.">
+  <meta name="description" content="Got writer's block? No — your apps are blocked until you write. Writeblock locks your dopamine apps until you journal 50 characters. No account, no subscription — your journal stays on your iPhone.">
   <meta property="og:title" content="Writeblock — Block Apps Until You Journal">
-  <meta property="og:description" content="Your dopamine apps stay locked until you write. 50 characters. That's all it takes.">
+  <meta property="og:description" content="Your dopamine apps stay locked until you write. 50 characters. That's all it takes. No subscription.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://writeblock.app/">
   <meta property="og:image" content="https://writeblock.app/og-image.png">
@@ -14,7 +14,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Writeblock — Block Apps Until You Journal">
-  <meta name="twitter:description" content="Your dopamine apps stay locked until you write. 50 characters. That's all it takes.">
+  <meta name="twitter:description" content="Your dopamine apps stay locked until you write. 50 characters. That's all it takes. No subscription.">
   <meta name="twitter:image" content="https://writeblock.app/og-image.png">
   <link rel="canonical" href="https://writeblock.app/">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -36,13 +36,13 @@
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
-        "description": "Free plan — Block 2 apps, daily journaling, streak tracking, export"
+        "description": "Free forever — journaling with photos & voice, streaks, calendar, App Lock, iCloud sync, themes, and export"
       },
       {
         "@type": "Offer",
-        "price": "7.99",
+        "price": "9.99",
         "priceCurrency": "USD",
-        "description": "Pro — One-time purchase for unlimited app blocking, App Lock, iCloud sync, themes"
+        "description": "App Blocking — one-time purchase, kept forever after a 1-week free trial. No subscription."
       }
     ],
     "publisher": {
@@ -186,12 +186,12 @@
     }
 
     .hero-image {
-      max-width: 520px;
+      max-width: 180px;
       width: 100%;
       height: auto;
-      margin: 0 auto 32px;
+      margin: 0 auto 28px;
       display: block;
-      border-radius: 16px;
+      filter: drop-shadow(0 12px 32px rgba(0, 0, 0, 0.18));
       animation: fadeInUp 0.8s ease-out;
     }
 
@@ -604,7 +604,7 @@
       }
 
       .hero-image {
-        max-width: 360px;
+        max-width: 144px;
       }
 
       .feature-card {
@@ -661,7 +661,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <img src="og-image.png" alt="Writeblock — Block Apps Until You Journal" class="hero-image">
+      <img src="app-icon.png" alt="Writeblock app icon" class="hero-image" width="180" height="180">
       <h1>Writeblock</h1>
       <p class="tagline">Block Apps Until You Journal</p>
       <p class="subtext">Got writer's block? No &mdash; your apps are blocked until you write.</p>
@@ -721,8 +721,8 @@
         </div>
         <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">🔐</span>
-          <h3>Your data stays on your device</h3>
-          <p>No servers, no tracking. Your journal never leaves your iPhone.</p>
+          <h3>Your writing stays private</h3>
+          <p>We run no servers and never see your entries. Your journal lives on your iPhone &mdash; and your private iCloud, only if you turn on sync.</p>
         </div>
         <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">📸</span>
@@ -730,14 +730,14 @@
           <p>Attach photos or record voice memos alongside your journal. Text is required to unlock &mdash; media is a bonus.</p>
         </div>
         <div class="feature-card fade-in">
+          <span class="feature-icon" aria-hidden="true">🔑</span>
+          <h3>App Lock &amp; iCloud sync &mdash; free</h3>
+          <p>Lock the app behind Face ID or a PIN, and back up across your devices. No upgrade, no extra charge.</p>
+        </div>
+        <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">🔥</span>
           <h3>Streak tracking</h3>
           <p>Watch your journaling habit grow day by day. Stay motivated with your streak.</p>
-        </div>
-        <div class="feature-card fade-in">
-          <span class="feature-icon" aria-hidden="true">📱</span>
-          <h3>Live Activity</h3>
-          <p>See your block status right on the Lock Screen and Dynamic Island. Always know where you stand.</p>
         </div>
         <div class="feature-card fade-in">
           <span class="feature-icon" aria-hidden="true">🆘</span>
@@ -765,30 +765,32 @@
     <div class="container">
       <div class="section-header fade-in">
         <h2>Simple Pricing</h2>
-        <p>Start free. Upgrade once, keep it forever.</p>
+        <p>Everything's free. Pay once for app blocking &mdash; and only if it works for you.</p>
       </div>
       <div class="pricing-grid fade-in">
         <div class="price-card">
-          <div class="price-label">Free</div>
-          <div class="price-amount">$0</div>
+          <div class="price-label">Everything else</div>
+          <div class="price-amount">Free</div>
           <div class="price-period">Forever</div>
           <ul class="price-features">
-            <li>Block 2 apps</li>
-            <li>Daily journaling</li>
-            <li>Streak tracking</li>
+            <li>Unlimited journaling, photos &amp; voice</li>
+            <li>Streaks, calendar &amp; search</li>
+            <li>App Lock (Face ID / PIN)</li>
+            <li>iCloud sync &amp; backup</li>
             <li>All themes</li>
-            <li>Export your data</li>
+            <li>Export anytime (Markdown)</li>
           </ul>
         </div>
         <div class="price-card pro">
-          <div class="price-label">Pro</div>
-          <div class="price-amount">$7.99</div>
-          <div class="price-period">One-time purchase</div>
+          <div class="price-label">App Blocking</div>
+          <div class="price-amount">$9.99</div>
+          <div class="price-period">One-time &middot; 1-week free trial</div>
           <ul class="price-features">
-            <li>Unlimited app blocking</li>
-            <li>App Lock (Face ID / PIN)</li>
-            <li>iCloud sync</li>
-            <li>Everything in Free</li>
+            <li>Block any apps you choose</li>
+            <li>Unlock them by journaling</li>
+            <li>Free for the first week</li>
+            <li>No subscription, ever</li>
+            <li>Restored free on your Apple ID</li>
           </ul>
         </div>
       </div>
@@ -808,14 +810,14 @@
         </div>
         <div class="privacy-point">
           <span class="icon" aria-hidden="true">🚫</span>
-          <span>No server</span>
+          <span>No subscription</span>
         </div>
         <div class="privacy-point">
           <span class="icon" aria-hidden="true">🚫</span>
-          <span>No data collection</span>
+          <span>No ads, no selling data</span>
         </div>
       </div>
-      <p style="margin-top: 24px; font-size: 17px; color: var(--color-text-secondary);">Everything stays on your iPhone.</p>
+      <p style="margin-top: 24px; font-size: 17px; color: var(--color-text-secondary);">Your entries never leave your device. The only thing we measure is anonymous, opt-out usage stats &mdash; never your writing. <a href="privacy.html" style="color: var(--color-accent); text-decoration: none;">See how privacy works&nbsp;&rarr;</a></p>
     </div>
   </section>
 

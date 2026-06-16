@@ -8,7 +8,7 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 
 - Your chosen apps get blocked at a set time (default 10 PM)
 - Write 50+ characters to unlock them instantly
-- No account, no server, no tracking — everything stays on your iPhone
+- No account, no subscription — your journal stays on your iPhone
 
 ## How It Works
 
@@ -19,18 +19,18 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 ## Features
 
 - **No account needed**: Install and start immediately
-- **Privacy-first**: No servers, no cloud, no data collection
+- **Privacy-first**: No servers of our own, no ads. Your journal stays on your device; only anonymous, opt-out usage analytics ever leave it
+- **App Lock & iCloud sync (free)**: Protect the app with Face ID or a PIN and back up across devices — no upgrade required
 - **Photos & voice**: Attach photos or record voice memos alongside your journal
 - **Streak tracking**: Track your daily journaling streak
-- **Live Activity**: See block status on Lock Screen and Dynamic Island
 - **Emergency unlock**: 5-minute temporary unlock, up to 3 times per day
 - **Export**: Markdown format with all attachments (photos, voice memos)
 - **Designed to graduate**: Build the habit, then move to any journaling app
 
 ## Pricing
 
-- **Free**: Block 2 apps, daily journaling, streak tracking, all themes, export
-- **Pro ($7.99 one-time)**: Unlimited app blocking, App Lock (Face ID/PIN), iCloud sync
+- **Free forever**: Unlimited journaling (photos & voice), streaks, calendar, search, App Lock (Face ID/PIN), iCloud sync, all themes, and export
+- **App Blocking ($9.99 one-time)**: Block any apps you choose and unlock them by journaling. Free for the first week, then a single non-consumable purchase — no subscription
 
 ## Links
 
@@ -42,6 +42,6 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 
 - Platform: iOS (16+)
 - Built with: Swift, SwiftUI
-- Data storage: On-device (Core Data), optional iCloud sync (Pro)
-- No backend servers, no Firebase, no analytics
+- Data storage: On-device (Core Data), optional iCloud sync (free, on by default)
+- No backend servers of our own, no Firebase, no ads — one analytics SDK (PostHog: anonymous, EU-hosted, opt-out) for funnel metrics; diary content and PII are never sent
 - Screen Time API for app blocking

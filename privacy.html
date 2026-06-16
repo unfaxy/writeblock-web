@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Writeblock</title>
-  <meta name="description" content="Writeblock Privacy Policy. No data collection, no servers, no tracking. Your journal stays on your device.">
+  <meta name="description" content="Writeblock Privacy Policy. Your journal and personal data stay on your device. We send only anonymous, opt-out usage analytics — never your writing.">
   <meta property="og:title" content="Privacy Policy — Writeblock">
-  <meta property="og:description" content="Writeblock Privacy Policy. No data collection, no servers, no tracking.">
+  <meta property="og:description" content="Your journal stays on your device. Only anonymous, opt-out usage analytics — never your writing.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://writeblock.app/privacy.html">
   <meta property="og:image" content="https://writeblock.app/og-image.png">
@@ -14,7 +14,7 @@
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy — Writeblock">
-  <meta name="twitter:description" content="Writeblock Privacy Policy. No data collection, no servers, no tracking.">
+  <meta name="twitter:description" content="Your journal stays on your device. Only anonymous, opt-out usage analytics — never your writing.">
   <meta name="twitter:image" content="https://writeblock.app/og-image.png">
   <link rel="canonical" href="https://writeblock.app/privacy.html">
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
@@ -361,7 +361,7 @@
     <div class="container">
       <div class="content">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: March 16, 2026</p>
+        <p class="last-updated">Last updated: June 16, 2026</p>
       </div>
     </div>
   </header>
@@ -372,104 +372,121 @@
       <div class="content">
 
         <div class="summary-box">
-          <p>Writeblock does not collect, store, or transmit any of your personal data. Everything stays on your device.</p>
+          <p>Your diary entries and personal data stay on your device. The only thing we send off-device is anonymous usage analytics &mdash; never your writing, photos, audio, or any personal information. You can turn it off anytime in Settings.</p>
         </div>
 
         <section>
           <h2>Overview</h2>
           <p>Writeblock ("we," "our," or "the app") is a habit-forming journaling app that blocks selected apps until you write a journal entry. This Privacy Policy explains how we handle your information.</p>
-          <p>The short version: we don't collect any data. There are no servers, no accounts, and no tracking. Your journal entries and app preferences remain entirely on your device.</p>
+          <p>The short version: we have no servers of our own and no user accounts. Your diary entries and personal data live on your device. The only data that leaves your device is anonymous, aggregate usage analytics &mdash; and you can switch it off.</p>
         </section>
 
         <section>
-          <h2>Information We Collect</h2>
-          <p>None. Writeblock does not collect, transmit, or store any personal information on external servers. We do not require an account, email address, or any form of registration to use the app.</p>
-        </section>
-
-        <section>
-          <h2>Local Data Storage</h2>
-          <p>All data created within Writeblock is stored locally on your device using Apple's Core Data framework. This includes:</p>
+          <h2>What Data Writeblock Stores</h2>
+          <p>Writeblock stores the following <strong>locally on your device only</strong>:</p>
           <ul>
-            <li>Journal entries you write</li>
-            <li>Your app blocking preferences and schedule</li>
-            <li>Streak and usage statistics</li>
-            <li>App settings and preferences</li>
-          </ul>
-          <p>This data never leaves your device unless you explicitly choose to export it or enable iCloud sync.</p>
-        </section>
-
-        <section>
-          <h2>iCloud Sync</h2>
-          <p>Pro users may optionally enable iCloud sync to synchronize their journal entries across Apple devices. When enabled:</p>
-          <ul>
-            <li>Your data is stored in your personal iCloud account via Apple's CloudKit framework</li>
-            <li>The data is protected by Apple's security and privacy measures</li>
-            <li>We (the developer) cannot access your iCloud data</li>
-            <li>Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a> governs iCloud data handling</li>
-          </ul>
-          <p>iCloud sync is optional and disabled by default. You can enable or disable it at any time in the app settings.</p>
-        </section>
-
-        <section>
-          <h2>Screen Time API (FamilyControls)</h2>
-          <p>Writeblock uses Apple's Screen Time API (FamilyControls framework) to block and unblock apps on your device. Regarding this functionality:</p>
-          <ul>
-            <li>The list of apps you choose to block is stored only on your device</li>
-            <li>App selection data is represented by opaque tokens that cannot be reverse-engineered into app identifiers</li>
-            <li>This data is never transmitted to our servers (we have none) or to any third party</li>
-            <li>Apple's privacy architecture ensures that neither we nor Apple can see which specific apps you have selected to block</li>
+            <li>Diary entries you write (text content, dates, timestamps)</li>
+            <li>App settings (block start time, notification preferences, theme selection)</li>
+            <li>Streak data (current streak, longest streak)</li>
+            <li>Blocked app selections (opaque tokens managed by Apple's Screen Time API)</li>
+            <li>App Lock PIN (stored securely in the iOS Keychain, never leaves your device)</li>
           </ul>
         </section>
 
         <section>
-          <h2>Analytics and Tracking</h2>
-          <p>Writeblock does not use any analytics or tracking services. We do not integrate with Google Analytics, Firebase, Mixpanel, or any other analytics platform. There are no tracking pixels, no behavioral analytics, and no usage telemetry of any kind.</p>
-        </section>
+          <h2>Data Collection</h2>
+          <p>Writeblock collects <strong>no personally identifiable information</strong>. Specifically:</p>
+          <ul>
+            <li>No advertising identifiers</li>
+            <li>No device fingerprinting</li>
+            <li>No cross-app or cross-site tracking</li>
+            <li>No crash reporting to external services</li>
+            <li>No user accounts or registration</li>
+            <li>Your diary content, photos, and audio never leave your device</li>
+          </ul>
 
-        <section>
-          <h2>Advertising</h2>
-          <p>Writeblock does not display advertisements. We do not integrate with any advertising networks or services.</p>
+          <h3>Anonymous Usage Analytics</h3>
+          <p>To understand how people use the app and where they get stuck, Writeblock sends <strong>anonymous, aggregate funnel events</strong> (such as "onboarding started", "first entry saved", or "purchase completed") to PostHog. These events:</p>
+          <ul>
+            <li>Contain <strong>no diary content and no personally identifiable information</strong></li>
+            <li>Use an anonymous identifier &mdash; no personal profile is created, and we cannot link events back to your identity</li>
+            <li>Include only non-identifying technical context attached automatically by the SDK (OS version, app version, device type, SDK version)</li>
+            <li>Have session replay and autocapture <strong>disabled</strong></li>
+            <li>Have IP-based geolocation <strong>disabled</strong> on the server side</li>
+            <li>Are hosted in the EU</li>
+            <li>Can be turned off anytime in <strong>Settings &rarr; "Send anonymous usage stats"</strong></li>
+          </ul>
         </section>
 
         <section>
           <h2>Third-Party Services</h2>
-          <p>Writeblock integrates with the following Apple services only:</p>
+          <p>Writeblock uses <strong>one</strong> third-party SDK &mdash; <strong>PostHog</strong>, for the anonymous usage analytics described above (EU-hosted, opt-out in Settings). Everything else is built with Apple's native frameworks:</p>
           <ul>
-            <li><strong>Apple StoreKit</strong> &mdash; for processing in-app purchases (Pro upgrade). Payment information is handled entirely by Apple and is not accessible to us.</li>
-            <li><strong>Apple CloudKit</strong> &mdash; for optional iCloud sync (Pro feature). Data is stored in your personal iCloud account under Apple's privacy protections.</li>
+            <li><strong>PostHog</strong> &mdash; anonymous usage analytics only (no diary content, no PII)</li>
+            <li><strong>SwiftUI</strong> &mdash; user interface</li>
+            <li><strong>Core Data</strong> &mdash; local storage</li>
+            <li><strong>Screen Time API / FamilyControls</strong> &mdash; app blocking</li>
+            <li><strong>StoreKit 2</strong> &mdash; App Store purchase verification, processed by Apple</li>
+            <li><strong>CloudKit</strong> &mdash; optional iCloud sync, managed by Apple</li>
+            <li><strong>LocalAuthentication</strong> &mdash; Face ID / Touch ID</li>
           </ul>
-          <p>We do not use any other third-party services, SDKs, or frameworks that collect user data.</p>
         </section>
 
         <section>
-          <h2>Data Export</h2>
-          <p>You can export all of your journal entries at any time in TXT or JSON format. This gives you full control over your data and the ability to migrate to another service whenever you choose.</p>
+          <h2>iCloud Sync</h2>
+          <p>If you have iCloud enabled on your device, Writeblock can sync your diary entries across your Apple devices using Apple's CloudKit service. This sync is:</p>
+          <ul>
+            <li><strong>User-controlled</strong> &mdash; you can toggle iCloud Sync in Settings at any time (on by default)</li>
+            <li><strong>End-to-end managed by Apple</strong> &mdash; Writeblock operates no servers of its own</li>
+            <li><strong>Subject to Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></strong> &mdash; iCloud data is protected by Apple's encryption and privacy practices</li>
+            <li><strong>Deletable</strong> &mdash; you can delete all synced data from iCloud through your device's Settings</li>
+          </ul>
         </section>
 
         <section>
-          <h2>Data Deletion</h2>
-          <p>You have complete control over your data:</p>
-          <ul>
-            <li><strong>In-app deletion</strong> &mdash; Use the "Delete All Data" option in Settings to permanently erase all journal entries and app data</li>
-            <li><strong>App deletion</strong> &mdash; Uninstalling Writeblock from your device removes all locally stored data</li>
-            <li><strong>iCloud data</strong> &mdash; If you used iCloud sync, you can manage your iCloud data through your device's iCloud settings</li>
-          </ul>
-          <p>Since we do not store data on any servers, there is no account to delete or remote data to request removal of.</p>
+          <h2>Purchase</h2>
+          <p>Writeblock is a free app with a single in-app purchase, processed entirely by Apple through the App Store. Writeblock does not receive or store any payment information. Apple's privacy policy governs all purchase transactions.</p>
+        </section>
+
+        <section>
+          <h2>Screen Time API (FamilyControls)</h2>
+          <p>Writeblock uses Apple's Screen Time API (FamilyControls) to block selected apps. This API uses opaque tokens &mdash; Writeblock cannot see the names, bundle identifiers, or any other details of the apps you select. Your selections are stored locally using Apple's prescribed mechanisms.</p>
         </section>
 
         <section>
           <h2>Children's Privacy</h2>
-          <p>Writeblock is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. Since we do not collect any personal information from any user, this concern does not apply in practice.</p>
+          <p>Writeblock is not directed at children under 13. The app does not knowingly collect any information from children.</p>
+        </section>
+
+        <section>
+          <h2>Your Rights (GDPR / CCPA)</h2>
+          <p>Writeblock collects no personally identifiable information &mdash; only anonymous usage analytics that cannot be linked to you &mdash; so there is no personal data to access, correct, delete, or port. Your diary entries and personal data are stored locally on your device and under your full control.</p>
+          <ul>
+            <li><strong>Access</strong> &mdash; open the app to view your data at any time</li>
+            <li><strong>Export</strong> &mdash; use the Export feature in Settings to download your entries as Markdown</li>
+            <li><strong>Delete</strong> &mdash; use "Delete All Data" in Settings to permanently erase all local data</li>
+            <li><strong>Portability</strong> &mdash; export your data in a standard format at any time; this feature is always free</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data Security</h2>
+          <ul>
+            <li>Diary entries are stored in Core Data on your device</li>
+            <li>Your App Lock PIN is stored in the iOS Keychain, accessible only on your device while it is unlocked</li>
+            <li>iCloud data (if enabled) is encrypted by Apple</li>
+            <li>Only anonymous usage analytics is sent off-device (to PostHog, EU-hosted); your diary content and personal data are never transmitted to any external server</li>
+          </ul>
         </section>
 
         <section>
           <h2>Changes to This Policy</h2>
-          <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last updated" date. We encourage you to review this page periodically.</p>
+          <p>If we update this Privacy Policy, we will post the revised version here with an updated "Last updated" date. Since we collect only anonymous, non-identifying usage data, changes are unlikely to affect your privacy.</p>
         </section>
 
         <section>
           <h2>Contact</h2>
-          <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:support@writeblock.app">support@writeblock.app</a>.</p>
+          <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:privacy@writeblock.app">privacy@writeblock.app</a>.</p>
         </section>
 
       </div>
