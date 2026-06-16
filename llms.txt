@@ -23,7 +23,6 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 - **App Lock & iCloud sync (free)**: Protect the app with Face ID or a PIN and back up across devices — no upgrade required
 - **Photos & voice**: Attach photos or record voice memos alongside your journal
 - **Streak tracking**: Track your daily journaling streak
-- **Emergency unlock**: 5-minute temporary unlock, up to 3 times per day
 - **Export**: Markdown format with all attachments (photos, voice memos)
 - **Designed to graduate**: Build the habit, then move to any journaling app
 
