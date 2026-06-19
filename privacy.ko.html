@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 — Writeblock</title>
+  <meta name="description" content="Writeblock 개인정보처리방침. 일기와 개인 데이터는 기기 안에 머뭅니다. 기기 밖으로 나가는 건 익명 사용 통계뿐이며, 당신의 글은 절대 보내지 않습니다. 언제든 끌 수 있습니다.">
+  <meta property="og:title" content="개인정보처리방침 — Writeblock">
+  <meta property="og:description" content="일기는 기기 안에 머뭅니다. 익명 사용 통계만 보내고, 당신의 글은 절대 보내지 않습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://writeblock.app/privacy.ko.html">
+  <meta property="og:image" content="https://writeblock.app/og-image.png">
+  <meta property="og:site_name" content="Writeblock">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="개인정보처리방침 — Writeblock">
+  <meta name="twitter:description" content="일기는 기기 안에 머뭅니다. 익명 사용 통계만 보내고, 당신의 글은 절대 보내지 않습니다.">
+  <meta name="twitter:image" content="https://writeblock.app/og-image.png">
+  <link rel="canonical" href="https://writeblock.app/privacy.ko.html">
+  <link rel="alternate" hreflang="en" href="https://writeblock.app/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://writeblock.app/privacy.ko.html">
+  <link rel="alternate" hreflang="x-default" href="https://writeblock.app/privacy.html">
+  <meta name="theme-color" content="#FAF8F3">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #FAF8F3;
+      --paper-2: #F2ECE0;
+      --ink: #15130E;
+      --ink-2: #5C574C;
+      --ink-3: #8A8275;
+      --accent: #E5462C;
+      --accent-ink: #B5331C;
+      --line: #E3DDD1;
+      --line-strong: #15130E;
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max: 1080px;
+      --content: 680px;
+      --gutter: 24px;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      word-break: keep-all;
+    }
+
+    ::selection { background: var(--accent); color: var(--paper); }
+
+    .serif { font-family: var(--serif); font-optical-sizing: auto; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+    .content { max-width: var(--content); margin: 0 auto; }
+
+    .eyebrow {
+      font-family: var(--sans); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink);
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      position: fixed; inset: 0 0 auto 0; z-index: 100; height: 60px;
+      background: color-mix(in srgb, var(--paper) 82%, transparent);
+      backdrop-filter: saturate(160%) blur(16px);
+      -webkit-backdrop-filter: saturate(160%) blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    .nav-logo {
+      font-family: var(--serif); font-weight: 900; font-size: 21px;
+      letter-spacing: -0.02em; color: var(--ink); text-decoration: none;
+    }
+    .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-2); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent-ink); }
+    .nav-lang {
+      border: 1px solid var(--line-strong); border-radius: 999px;
+      padding: 4px 12px; color: var(--ink) !important; line-height: 1;
+    }
+    .nav-lang:hover { background: var(--ink); color: var(--paper) !important; }
+
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+    /* ---- Page header ---- */
+    .page-header { padding-top: 132px; padding-bottom: 44px; }
+    .page-header .eyebrow { display: block; margin-bottom: 16px; }
+    .page-header h1 {
+      font-family: var(--serif); font-weight: 900;
+      font-size: clamp(2.6rem, 7vw, 4.4rem); letter-spacing: -0.035em;
+      line-height: 1.05; margin-bottom: 16px;
+    }
+    .page-header .last-updated { font-size: 15px; color: var(--ink-2); }
+
+    /* ---- Legal content ---- */
+    .legal { padding: 0 0 104px; }
+    .legal section { padding: 44px 0; border-top: 1px solid var(--line); }
+    .legal h2 {
+      font-family: var(--serif); font-weight: 700;
+      font-size: clamp(1.55rem, 3.2vw, 2.05rem); letter-spacing: -0.02em;
+      line-height: 1.2; margin-bottom: 18px;
+    }
+    .legal h3 {
+      font-family: var(--serif); font-weight: 600; font-size: 19px;
+      letter-spacing: -0.01em; margin: 30px 0 12px;
+    }
+    .legal p { font-size: 16px; color: var(--ink-2); line-height: 1.85; margin-bottom: 16px; }
+    .legal p:last-child { margin-bottom: 0; }
+    .legal strong { color: var(--ink); font-weight: 600; }
+
+    .legal ul { list-style: none; margin-bottom: 16px; }
+    .legal ul li {
+      font-size: 16px; color: var(--ink-2); line-height: 1.85;
+      padding: 5px 0 5px 26px; position: relative;
+    }
+    .legal ul li::before {
+      content: "—"; position: absolute; left: 0; top: 5px;
+      color: var(--accent); font-weight: 700;
+    }
+
+    .legal a {
+      color: var(--ink); text-decoration: none;
+      border-bottom: 2px solid var(--accent); padding-bottom: 1px; transition: color 0.2s;
+    }
+    .legal a:hover { color: var(--accent-ink); }
+
+    /* ---- Summary box ---- */
+    .summary-box {
+      border: 1px solid var(--line-strong); border-radius: 18px;
+      padding: 30px 34px; margin-bottom: 4px;
+    }
+    .summary-box .eyebrow { display: block; margin-bottom: 14px; }
+    .summary-box p {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(19px, 2.4vw, 23px); line-height: 1.5; color: var(--ink); margin: 0;
+    }
+
+    /* ---- Back link ---- */
+    .back-link { padding: 40px 0; border-top: 1px solid var(--line); }
+    .back-link a {
+      font-size: 15px; font-weight: 500; color: var(--ink); text-decoration: none;
+      border-bottom: 2px solid var(--accent); padding-bottom: 2px; transition: color 0.2s;
+    }
+    .back-link a:hover { color: var(--accent-ink); }
+
+    /* ---- Footer ---- */
+    footer { border-top: 1px solid var(--line); padding: 40px 0; }
+    .footer-content { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-tagline { font-family: var(--serif); font-weight: 500; font-style: italic; font-size: 16px; color: var(--ink-2); }
+    .footer-links { display: flex; gap: 24px; list-style: none; }
+    .footer-links a { font-size: 14px; color: var(--ink-2); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent-ink); }
+    .footer-copy { width: 100%; text-align: center; font-size: 13px; color: var(--ink-3); margin-top: 20px; }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 720px) {
+      .nav-links { gap: 16px; }
+      .page-header { padding-top: 108px; padding-bottom: 32px; }
+      .legal section { padding: 36px 0; }
+      .footer-content { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .page-header { padding-top: 96px; }
+      .summary-box { padding: 24px 24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .nav-links a, .footer-links a, .legal a, .back-link a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav aria-label="주 메뉴">
+    <div class="container">
+      <a href="/" class="nav-logo">Writeblock</a>
+      <ul class="nav-links">
+        <li><a href="privacy.ko.html" aria-current="page">개인정보</a></li>
+        <li><a href="terms.ko.html">약관</a></li>
+        <li><a class="nav-lang" href="privacy.html" lang="en" hreflang="en">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="content">
+        <span class="eyebrow">법적 고지</span>
+        <h1 class="serif">개인정보처리방침</h1>
+        <p class="last-updated">최종 업데이트: 2026년 6월 16일</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Content -->
+  <main class="legal">
+    <div class="container">
+      <div class="content">
+
+        <div class="summary-box">
+          <span class="eyebrow">요약</span>
+          <p>일기와 개인 데이터는 기기 안에 머뭅니다. 기기 밖으로 나가는 건 익명 사용 통계뿐이며 &mdash; 당신의 글·사진·음성이나 어떤 개인정보도 보내지 않습니다. 설정에서 언제든 끌 수 있습니다.</p>
+        </div>
+
+        <section>
+          <h2 class="serif">개요</h2>
+          <p>Writeblock("우리", "당사" 또는 "앱")은 일기를 쓸 때까지 선택한 앱을 차단해 습관을 만드는 일기 앱입니다. 이 개인정보처리방침은 당사가 당신의 정보를 어떻게 다루는지 설명합니다.</p>
+          <p>요점은 이렇습니다. 당사는 자체 서버도, 사용자 계정도 없습니다. 일기와 개인 데이터는 당신의 기기 안에 있습니다. 기기를 벗어나는 데이터는 익명의 집계 사용 통계뿐이며 &mdash; 이마저도 끌 수 있습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">Writeblock이 저장하는 데이터</h2>
+          <p>Writeblock은 아래 데이터를 <strong>기기 안에만</strong> 저장합니다.</p>
+          <ul>
+            <li>작성한 일기 (텍스트 내용, 날짜, 시각)</li>
+            <li>앱 설정 (차단 시작 시간, 알림 설정, 테마 선택)</li>
+            <li>스트릭 데이터 (현재 스트릭, 최장 스트릭)</li>
+            <li>차단 앱 선택 (Apple의 Screen Time API가 관리하는 불투명 토큰)</li>
+            <li>앱 잠금 PIN (iOS 키체인에 안전하게 저장되며 기기를 절대 벗어나지 않음)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">데이터 수집</h2>
+          <p>Writeblock은 <strong>신원을 식별할 수 있는 정보를 수집하지 않습니다.</strong> 구체적으로는,</p>
+          <ul>
+            <li>광고 식별자 없음</li>
+            <li>기기 핑거프린팅 없음</li>
+            <li>앱 간·사이트 간 추적 없음</li>
+            <li>외부 서비스로의 크래시 리포트 없음</li>
+            <li>사용자 계정이나 회원가입 없음</li>
+            <li>일기 내용·사진·음성은 기기를 절대 벗어나지 않음</li>
+          </ul>
+
+          <h3 class="serif">익명 사용 통계</h3>
+          <p>사람들이 앱을 어떻게 쓰고 어디서 막히는지 이해하기 위해, Writeblock은 <strong>익명의 집계 퍼널 이벤트</strong>("온보딩 시작", "첫 일기 저장", "구매 완료" 등)를 PostHog로 전송합니다. 이 이벤트는,</p>
+          <ul>
+            <li><strong>일기 내용과 신원 식별 정보를 전혀 포함하지 않습니다</strong></li>
+            <li>익명 식별자를 사용합니다 &mdash; 개인 프로필을 만들지 않으며, 이벤트를 당신의 신원과 연결할 수 없습니다</li>
+            <li>SDK가 자동으로 붙이는, 신원을 식별하지 않는 기술적 맥락(OS 버전, 앱 버전, 기기 종류, SDK 버전)만 포함합니다</li>
+            <li>세션 리플레이와 자동 수집(autocapture)을 <strong>사용하지 않습니다</strong></li>
+            <li>서버 단에서 IP 기반 위치 추정을 <strong>사용하지 않습니다</strong></li>
+            <li>EU에 호스팅됩니다</li>
+            <li><strong>설정 &rarr; "익명 사용 통계 보내기"</strong>에서 언제든 끌 수 있습니다</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">서드파티 서비스</h2>
+          <p>Writeblock은 위에서 설명한 익명 사용 통계를 위해 <strong>단 하나의</strong> 서드파티 SDK &mdash; <strong>PostHog</strong>(EU 호스팅, 설정에서 옵트아웃 가능) &mdash; 를 사용합니다. 그 외 모든 기능은 Apple의 네이티브 프레임워크로 만들어졌습니다.</p>
+          <ul>
+            <li><strong>PostHog</strong> &mdash; 익명 사용 통계 전용 (일기 내용·개인정보 없음)</li>
+            <li><strong>SwiftUI</strong> &mdash; 사용자 인터페이스</li>
+            <li><strong>Core Data</strong> &mdash; 로컬 저장</li>
+            <li><strong>Screen Time API / FamilyControls</strong> &mdash; 앱 차단</li>
+            <li><strong>StoreKit 2</strong> &mdash; App Store 구매 검증, Apple이 처리</li>
+            <li><strong>CloudKit</strong> &mdash; 선택적 iCloud 동기화, Apple이 관리</li>
+            <li><strong>LocalAuthentication</strong> &mdash; Face ID / Touch ID</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">iCloud 동기화</h2>
+          <p>기기에서 iCloud를 켜두면, Writeblock은 Apple의 CloudKit 서비스를 이용해 일기를 여러 Apple 기기에 동기화할 수 있습니다. 이 동기화는,</p>
+          <ul>
+            <li><strong>사용자가 제어합니다</strong> &mdash; 설정에서 언제든 iCloud 동기화를 켜고 끌 수 있습니다(기본값 켜짐)</li>
+            <li><strong>전 과정을 Apple이 관리합니다</strong> &mdash; Writeblock은 자체 서버를 운영하지 않습니다</li>
+            <li><strong>Apple의 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">개인정보처리방침</a>을 따릅니다</strong> &mdash; iCloud 데이터는 Apple의 암호화와 개인정보 보호 정책으로 보호됩니다</li>
+            <li><strong>삭제할 수 있습니다</strong> &mdash; 기기의 설정에서 iCloud에 동기화된 데이터를 모두 삭제할 수 있습니다</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">구매</h2>
+          <p>Writeblock은 단건 인앱 구매가 있는 무료 앱이며, 결제는 전적으로 Apple이 App Store를 통해 처리합니다. Writeblock은 어떤 결제 정보도 받거나 저장하지 않습니다. 모든 구매 거래에는 Apple의 개인정보처리방침이 적용됩니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">Screen Time API (FamilyControls)</h2>
+          <p>Writeblock은 선택한 앱을 차단하기 위해 Apple의 Screen Time API(FamilyControls)를 사용합니다. 이 API는 불투명 토큰을 사용하므로 &mdash; Writeblock은 당신이 선택한 앱의 이름·번들 식별자나 그 밖의 어떤 정보도 볼 수 없습니다. 선택 내용은 Apple이 정한 방식으로 기기 안에 저장됩니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">아동 개인정보 보호</h2>
+          <p>Writeblock은 만 13세 미만 아동을 대상으로 하지 않습니다. 앱은 아동의 어떤 정보도 의도적으로 수집하지 않습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">당신의 권리 (GDPR / CCPA)</h2>
+          <p>Writeblock은 신원을 식별할 수 있는 정보를 수집하지 않으며 &mdash; 당신과 연결할 수 없는 익명 사용 통계만 다룹니다 &mdash; 따라서 접근·정정·삭제·이동할 개인정보 자체가 없습니다. 일기와 개인 데이터는 기기 안에 저장되며 전적으로 당신의 통제 아래 있습니다.</p>
+          <ul>
+            <li><strong>접근</strong> &mdash; 앱을 열면 언제든 당신의 데이터를 볼 수 있습니다</li>
+            <li><strong>내보내기</strong> &mdash; 설정의 내보내기 기능으로 일기를 Markdown으로 내려받을 수 있습니다</li>
+            <li><strong>삭제</strong> &mdash; 설정의 "모든 데이터 삭제"로 모든 로컬 데이터를 영구히 지울 수 있습니다</li>
+            <li><strong>이동성</strong> &mdash; 언제든 표준 형식으로 데이터를 내보낼 수 있습니다. 이 기능은 항상 무료입니다</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">데이터 보안</h2>
+          <ul>
+            <li>일기는 기기의 Core Data에 저장됩니다</li>
+            <li>앱 잠금 PIN은 iOS 키체인에 저장되며, 기기가 잠금 해제된 상태에서 이 기기에서만 접근할 수 있습니다</li>
+            <li>iCloud 데이터(켜둔 경우)는 Apple이 암호화합니다</li>
+            <li>기기 밖으로 나가는 데이터는 익명 사용 통계뿐입니다(PostHog, EU 호스팅). 일기 내용과 개인 데이터는 어떤 외부 서버로도 전송되지 않습니다</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">방침 변경</h2>
+          <p>이 개인정보처리방침을 업데이트하면, 갱신된 "최종 업데이트" 날짜와 함께 수정본을 이곳에 게시합니다. 익명의 비식별 사용 데이터만 수집하므로, 변경이 당신의 개인정보에 영향을 줄 가능성은 거의 없습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">문의</h2>
+          <p>이 개인정보처리방침에 대해 궁금한 점이 있으면 <a href="mailto:privacy@writeblock.app">privacy@writeblock.app</a> 으로 연락해 주세요.</p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Back Link -->
+  <div class="back-link">
+    <div class="container">
+      <div class="content">
+        <a href="index.html">&larr; Writeblock으로 돌아가기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-tagline">일기 앱이 아니라, 습관 엔진.</p>
+        <ul class="footer-links">
+          <li><a href="privacy.ko.html">개인정보처리방침</a></li>
+          <li><a href="terms.ko.html">이용약관</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Writeblock</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

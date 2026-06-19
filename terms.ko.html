@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이용약관 — Writeblock</title>
+  <meta name="description" content="Writeblock 이용약관. Writeblock 앱 사용에 대한 약관과 조건을 안내합니다.">
+  <meta property="og:title" content="이용약관 — Writeblock">
+  <meta property="og:description" content="Writeblock 앱 사용에 대한 약관과 조건.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://writeblock.app/terms.ko.html">
+  <meta property="og:image" content="https://writeblock.app/og-image.png">
+  <meta property="og:site_name" content="Writeblock">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="이용약관 — Writeblock">
+  <meta name="twitter:description" content="Writeblock 앱 사용에 대한 약관과 조건.">
+  <meta name="twitter:image" content="https://writeblock.app/og-image.png">
+  <link rel="canonical" href="https://writeblock.app/terms.ko.html">
+  <link rel="alternate" hreflang="en" href="https://writeblock.app/terms.html">
+  <link rel="alternate" hreflang="ko" href="https://writeblock.app/terms.ko.html">
+  <link rel="alternate" hreflang="x-default" href="https://writeblock.app/terms.html">
+  <meta name="theme-color" content="#FAF8F3">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --paper: #FAF8F3;
+      --paper-2: #F2ECE0;
+      --ink: #15130E;
+      --ink-2: #5C574C;
+      --ink-3: #8A8275;
+      --accent: #E5462C;
+      --accent-ink: #B5331C;
+      --line: #E3DDD1;
+      --line-strong: #15130E;
+      --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max: 1080px;
+      --content: 680px;
+      --gutter: 24px;
+    }
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      word-break: keep-all;
+    }
+
+    ::selection { background: var(--accent); color: var(--paper); }
+
+    .serif { font-family: var(--serif); font-optical-sizing: auto; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+    .content { max-width: var(--content); margin: 0 auto; }
+
+    .eyebrow {
+      font-family: var(--sans); font-size: 12px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink);
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      position: fixed; inset: 0 0 auto 0; z-index: 100; height: 60px;
+      background: color-mix(in srgb, var(--paper) 82%, transparent);
+      backdrop-filter: saturate(160%) blur(16px);
+      -webkit-backdrop-filter: saturate(160%) blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    .nav-logo {
+      font-family: var(--serif); font-weight: 900; font-size: 21px;
+      letter-spacing: -0.02em; color: var(--ink); text-decoration: none;
+    }
+    .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-2); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent-ink); }
+    .nav-lang {
+      border: 1px solid var(--line-strong); border-radius: 999px;
+      padding: 4px 12px; color: var(--ink) !important; line-height: 1;
+    }
+    .nav-lang:hover { background: var(--ink); color: var(--paper) !important; }
+
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+    /* ---- Page header ---- */
+    .page-header { padding-top: 132px; padding-bottom: 44px; }
+    .page-header .eyebrow { display: block; margin-bottom: 16px; }
+    .page-header h1 {
+      font-family: var(--serif); font-weight: 900;
+      font-size: clamp(2.6rem, 7vw, 4.4rem); letter-spacing: -0.035em;
+      line-height: 1.05; margin-bottom: 16px;
+    }
+    .page-header .last-updated { font-size: 15px; color: var(--ink-2); }
+
+    /* ---- Legal content ---- */
+    .legal { padding: 0 0 104px; }
+    .legal section { padding: 44px 0; border-top: 1px solid var(--line); }
+    .legal h2 {
+      font-family: var(--serif); font-weight: 700;
+      font-size: clamp(1.55rem, 3.2vw, 2.05rem); letter-spacing: -0.02em;
+      line-height: 1.2; margin-bottom: 18px;
+    }
+    .legal h3 {
+      font-family: var(--serif); font-weight: 600; font-size: 19px;
+      letter-spacing: -0.01em; margin: 30px 0 12px;
+    }
+    .legal p { font-size: 16px; color: var(--ink-2); line-height: 1.85; margin-bottom: 16px; }
+    .legal p:last-child { margin-bottom: 0; }
+    .legal strong { color: var(--ink); font-weight: 600; }
+
+    .legal ul { list-style: none; margin-bottom: 16px; }
+    .legal ul li {
+      font-size: 16px; color: var(--ink-2); line-height: 1.85;
+      padding: 5px 0 5px 26px; position: relative;
+    }
+    .legal ul li::before {
+      content: "—"; position: absolute; left: 0; top: 5px;
+      color: var(--accent); font-weight: 700;
+    }
+
+    .legal a {
+      color: var(--ink); text-decoration: none;
+      border-bottom: 2px solid var(--accent); padding-bottom: 1px; transition: color 0.2s;
+    }
+    .legal a:hover { color: var(--accent-ink); }
+
+    /* ---- Summary box ---- */
+    .summary-box {
+      border: 1px solid var(--line-strong); border-radius: 18px;
+      padding: 30px 34px; margin-bottom: 4px;
+    }
+    .summary-box .eyebrow { display: block; margin-bottom: 14px; }
+    .summary-box p {
+      font-family: var(--serif); font-weight: 500;
+      font-size: clamp(19px, 2.4vw, 23px); line-height: 1.5; color: var(--ink); margin: 0;
+    }
+
+    /* ---- Back link ---- */
+    .back-link { padding: 40px 0; border-top: 1px solid var(--line); }
+    .back-link a {
+      font-size: 15px; font-weight: 500; color: var(--ink); text-decoration: none;
+      border-bottom: 2px solid var(--accent); padding-bottom: 2px; transition: color 0.2s;
+    }
+    .back-link a:hover { color: var(--accent-ink); }
+
+    /* ---- Footer ---- */
+    footer { border-top: 1px solid var(--line); padding: 40px 0; }
+    .footer-content { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    .footer-tagline { font-family: var(--serif); font-weight: 500; font-style: italic; font-size: 16px; color: var(--ink-2); }
+    .footer-links { display: flex; gap: 24px; list-style: none; }
+    .footer-links a { font-size: 14px; color: var(--ink-2); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent-ink); }
+    .footer-copy { width: 100%; text-align: center; font-size: 13px; color: var(--ink-3); margin-top: 20px; }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 720px) {
+      .nav-links { gap: 16px; }
+      .page-header { padding-top: 108px; padding-bottom: 32px; }
+      .legal section { padding: 36px 0; }
+      .footer-content { flex-direction: column; text-align: center; }
+      .footer-links { justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .page-header { padding-top: 96px; }
+      .summary-box { padding: 24px 24px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .nav-links a, .footer-links a, .legal a, .back-link a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav aria-label="주 메뉴">
+    <div class="container">
+      <a href="/" class="nav-logo">Writeblock</a>
+      <ul class="nav-links">
+        <li><a href="privacy.ko.html">개인정보</a></li>
+        <li><a href="terms.ko.html" aria-current="page">약관</a></li>
+        <li><a class="nav-lang" href="terms.html" lang="en" hreflang="en">EN</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="content">
+        <span class="eyebrow">법적 고지</span>
+        <h1 class="serif">이용약관</h1>
+        <p class="last-updated">최종 업데이트: 2026년 6월 16일</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal Content -->
+  <main class="legal">
+    <div class="container">
+      <div class="content">
+
+        <div class="summary-box">
+          <span class="eyebrow">요약</span>
+          <p>Writeblock을 사용하면 이 약관에 동의하는 것입니다. 당신의 콘텐츠는 당신의 것입니다. 앱은 있는 그대로(as-is) 제공됩니다.</p>
+        </div>
+
+        <section>
+          <h2 class="serif">1. 약관 동의</h2>
+          <p>Writeblock("앱")을 내려받거나 설치하거나 사용하면 이 이용약관("약관")에 구속되는 데 동의하는 것입니다. 약관에 동의하지 않으면 앱을 사용하지 마세요.</p>
+          <p>이 약관은 당신과 Writeblock("우리", "당사") 사이의 법적 합의입니다. 당사는 언제든 이 약관을 업데이트할 권리를 가집니다. 변경 사항이 게시된 뒤에도 앱을 계속 사용하면 개정된 약관에 동의하는 것으로 봅니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">2. 서비스 설명</h2>
+          <p>Writeblock은 일기를 쓸 때까지 기기에서 선택한 앱을 차단해, 매일 일기 쓰는 습관을 만들도록 돕는 습관 형성 앱입니다. 50자 이상 일기를 쓰면 차단된 앱이 풀립니다. 앱은 Apple의 Screen Time API(FamilyControls 프레임워크)로 앱 제한을 관리합니다.</p>
+          <p>Writeblock은 개인용 생산성 도구로 설계되었습니다. 전문적인 정신 건강 서비스나 치료를 대체하지 않습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">3. 이용 자격</h2>
+          <p>Writeblock을 사용하려면 만 13세 이상이어야 합니다. 앱을 사용함으로써 당신이 이 연령 요건을 충족함을 표명하는 것으로 봅니다. 만 18세 미만이라면 부모나 보호자와 함께 이 약관을 검토하는 것이 좋습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">4. 허용되는 사용</h2>
+          <p>Writeblock은 당신의 개인적·비상업적 사용에 한해 라이선스가 부여됩니다. 다음 행위에 동의하지 않습니다.</p>
+          <ul>
+            <li>앱의 어떤 부분이든 리버스 엔지니어링·디컴파일·디스어셈블하는 행위</li>
+            <li>앱을 수정·개작하거나 앱에 기반한 2차적 저작물을 만드는 행위</li>
+            <li>앱을 제3자에게 배포·재라이선스·임대·대여하는 행위</li>
+            <li>불법적인 목적이나 관련 법률을 위반해 앱을 사용하는 행위</li>
+            <li>앱의 보안 기능이나 앱 차단 기능을 우회하거나 무력화하려는 행위</li>
+            <li>기기의 작동을 손상·중단·방해할 수 있는 방식으로 앱을 사용하는 행위</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">5. 당신의 콘텐츠</h2>
+          <p>Writeblock 안에서 만든 모든 일기와 콘텐츠의 소유권은 전적으로 당신에게 있습니다. 당사는 당신의 콘텐츠에 대해 어떤 권리도 주장하지 않습니다.</p>
+          <p>모든 콘텐츠는 당신의 기기 안에(동기화를 켜둔 경우 개인 iCloud 계정에) 저장되므로, 당사는 당신의 일기에 접근할 수도, 볼 수도 없습니다. 당신이 만든 콘텐츠와 데이터 백업 관리에 대한 책임은 전적으로 당신에게 있습니다.</p>
+          <p>Writeblock은 신원을 식별할 수 있는 정보를 수집하지 않습니다. 기기 밖으로 나가는 데이터는 익명의 집계 사용 통계(앱에서 어느 단계까지 도달했는지)뿐이며 &mdash; 일기 내용·사진·음성은 절대 보내지 않습니다. 이 통계는 언제든 설정에서 끌 수 있습니다. 자세한 내용은 <a href="privacy.ko.html">개인정보처리방침</a>을 참고하세요.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">6. 가격과 인앱 구매</h2>
+
+          <h3 class="serif">무료인 것</h3>
+          <p>Writeblock은 무료로 내려받을 수 있습니다. 아래 기능은 구매 없이 평생 무료입니다.</p>
+          <ul>
+            <li>무제한 일기 작성과 전체 일기 기록</li>
+            <li>사진과 음성 메모</li>
+            <li>앱 잠금 (PIN + Face ID / Touch ID)</li>
+            <li>여러 기기 간 iCloud 동기화</li>
+            <li>테마</li>
+            <li>데이터 내보내기 (Markdown)</li>
+            <li>스트릭 추적, 캘린더, 검색</li>
+          </ul>
+
+          <h3 class="serif">앱 차단</h3>
+          <p>앱 차단(Screen Time 기능)은 1주일간 무료로 체험할 수 있습니다. 체험이 끝난 뒤 이 기능을 영구히 사용하려면 단건 비소비성 인앱 구매 $9.99(USD, Apple의 지역별 가격 적용)가 필요합니다. 구독이 아니라 한 번만 결제하는 구매이며 &mdash; 반복 청구가 없습니다. 구매하지 않기로 하면 앱 차단만 꺼지고, 일기·동기화·내보내기는 계속 무료로 쓸 수 있습니다.</p>
+
+          <h3 class="serif">결제와 청구</h3>
+          <p>구매는 Apple App Store를 통해 처리됩니다. 구매함으로써 당신은 App Store 거래에 대한 Apple의 <a href="https://www.apple.com/legal/internet-services/itunes/" target="_blank" rel="noopener noreferrer">약관</a>에 동의하는 것입니다. 재다운로드와 구매는 같은 Apple ID에서 무료로 복원됩니다.</p>
+
+          <h3 class="serif">환불</h3>
+          <p>모든 환불 요청은 Apple의 환불 정책에 따라 Apple이 처리합니다. 환불을 요청하려면 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>을 방문하세요. 당사는 환불을 직접 처리하지 않습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">7. 지식재산권</h2>
+          <p>Writeblock 앱은 디자인·코드·그래픽·로고·사용자 인터페이스를 포함해 Writeblock의 지식재산이며, 관련 저작권법과 상표법으로 보호됩니다.</p>
+          <p>제5조에 명시한 대로, 앱 안에서 당신이 만든 모든 일기 콘텐츠는 당신의 자산으로 남습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">8. Screen Time API와 앱 차단</h2>
+          <p>Writeblock의 핵심 기능은 Apple의 Screen Time API(FamilyControls 프레임워크)에 의존합니다. 50자 이상 일기를 쓰면 차단된 앱이 풀립니다. 일기를 쓰지 않으면 하루가 끝나는 시각(새벽 4시)에 차단이 자동으로 풀리고 스트릭이 초기화됩니다 &mdash; 하루 안에서 차단이 얼마나 오래 지속될 수 있는지에 대한 시간 제한은 없습니다.</p>
+          <p>또한 다음을 유의하세요.</p>
+          <ul>
+            <li>앱 차단 기능은 Apple의 정책과 기술 요건을 따르며, 이는 언제든 바뀔 수 있습니다</li>
+            <li>iOS나 Screen Time API의 변경이 앱의 차단·해제 능력에 영향을 줄 수 있습니다</li>
+            <li>Apple이 Screen Time API에 가하는 변경으로 앱 기능에 영향이 생기더라도 당사는 책임지지 않습니다</li>
+            <li>앱이 작동하려면 Screen Time 권한이 필요하며, 이 권한을 해제하면 앱 차단 기능이 비활성화됩니다</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">9. 보증의 부인</h2>
+          <p>Writeblock은 명시적이든 묵시적이든 어떠한 종류의 보증도 없이 "있는 그대로(as is)" 그리고 "이용 가능한 상태로(as available)" 제공되며, 여기에는 상품성, 특정 목적 적합성, 비침해에 대한 보증이 포함되지만 이에 한정되지 않습니다.</p>
+          <p>당사는 다음을 보증하지 않습니다.</p>
+          <ul>
+            <li>앱이 중단 없이 또는 오류 없이 작동하리라는 것</li>
+            <li>결함이 적시에 수정되리라는 것</li>
+            <li>앱이 당신의 구체적인 요구나 기대를 충족하리라는 것</li>
+            <li>어떤 상황에서도 당신의 데이터가 보존되리라는 것</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="serif">10. 책임의 제한</h2>
+          <p>관련 법이 허용하는 최대 범위 안에서, Writeblock과 그 개발자는 간접적·부수적·특별·결과적 또는 징벌적 손해에 대해 책임지지 않으며, 여기에는 다음이 포함되지만 이에 한정되지 않습니다.</p>
+          <ul>
+            <li>데이터나 일기의 손실</li>
+            <li>이익이나 수익의 손실</li>
+            <li>기기에서 앱에 접근하지 못함</li>
+            <li>앱의 사용 또는 사용 불능에서 발생하는 모든 손해</li>
+          </ul>
+          <p>앱과 관련해 발생하는 모든 청구에 대한 당사의 총책임은, 당신이 앱에 대해 지불한 금액(있는 경우)을 초과하지 않습니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">11. 면책</h2>
+          <p>당신은 앱 사용이나 이 약관 위반에서 발생하는 모든 청구·손실·손해·책임·비용(변호사 비용 포함)으로부터 Writeblock과 그 개발자를 면책하고 손해를 입히지 않는 데 동의합니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">12. 해지</h2>
+          <p>기기에서 앱을 삭제하면 언제든 Writeblock 사용을 중단할 수 있습니다. 삭제 시 로컬에 저장된 모든 데이터가 제거됩니다.</p>
+          <p>당사는 사전 통지 여부와 관계없이 언제든 앱이나 그 기능을 중단할 권리를 가집니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">13. 준거법</h2>
+          <p>이 약관은 법률 충돌 조항과 무관하게 대한민국 법률에 따라 규율되고 해석됩니다. 이 약관이나 앱 사용에서 발생하는 모든 분쟁은 대한민국 법원의 전속 관할에 따릅니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">14. 가분성</h2>
+          <p>이 약관의 어떤 조항이 집행 불가능하거나 무효로 판명되더라도, 그 조항은 필요한 최소 범위로 제한되거나 제거되며, 나머지 조항은 완전한 효력을 유지합니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">15. 약관 변경</h2>
+          <p>당사는 수시로 이 약관을 업데이트할 수 있습니다. 변경 사항은 갱신된 "최종 업데이트" 날짜와 함께 이 페이지에 게시됩니다. 변경 이후에도 앱을 계속 사용하면 업데이트된 약관에 동의하는 것으로 봅니다.</p>
+        </section>
+
+        <section>
+          <h2 class="serif">16. 문의</h2>
+          <p>이 약관에 대해 궁금한 점이 있으면 <a href="mailto:support@writeblock.app">support@writeblock.app</a> 으로 연락해 주세요.</p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Back Link -->
+  <div class="back-link">
+    <div class="container">
+      <div class="content">
+        <a href="index.html">&larr; Writeblock으로 돌아가기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-tagline">일기 앱이 아니라, 습관 엔진.</p>
+        <ul class="footer-links">
+          <li><a href="privacy.ko.html">개인정보처리방침</a></li>
+          <li><a href="terms.ko.html">이용약관</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Writeblock</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

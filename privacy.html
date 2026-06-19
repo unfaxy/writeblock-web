@@ -12,11 +12,15 @@
   <meta property="og:image" content="https://writeblock.app/og-image.png">
   <meta property="og:site_name" content="Writeblock">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy — Writeblock">
   <meta name="twitter:description" content="Your journal stays on your device. Only anonymous, opt-out usage analytics — never your writing.">
   <meta name="twitter:image" content="https://writeblock.app/og-image.png">
   <link rel="canonical" href="https://writeblock.app/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://writeblock.app/privacy.html">
+  <link rel="alternate" hreflang="ko" href="https://writeblock.app/privacy.ko.html">
+  <link rel="alternate" hreflang="x-default" href="https://writeblock.app/privacy.html">
   <meta name="theme-color" content="#FAF8F3">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -83,9 +87,14 @@
       font-family: var(--serif); font-weight: 900; font-size: 21px;
       letter-spacing: -0.02em; color: var(--ink); text-decoration: none;
     }
-    .nav-links { display: flex; gap: 30px; list-style: none; }
+    .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
     .nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-2); text-decoration: none; transition: color 0.2s; }
     .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--accent-ink); }
+    .nav-lang {
+      border: 1px solid var(--line-strong); border-radius: 999px;
+      padding: 4px 12px; color: var(--ink) !important; line-height: 1;
+    }
+    .nav-lang:hover { background: var(--ink); color: var(--paper) !important; }
 
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
 
@@ -186,6 +195,7 @@
       <ul class="nav-links">
         <li><a href="privacy.html" aria-current="page">Privacy</a></li>
         <li><a href="terms.html">Terms</a></li>
+        <li><a class="nav-lang" href="privacy.ko.html" lang="ko" hreflang="ko">한국어</a></li>
       </ul>
     </div>
   </nav>
