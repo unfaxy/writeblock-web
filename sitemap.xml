@@ -3,9 +3,21 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://writeblock.app/</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://writeblock.app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://writeblock.app/index.ko.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://writeblock.app/"/>
+  </url>
+  <url>
+    <loc>https://writeblock.app/index.ko.html</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://writeblock.app/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://writeblock.app/index.ko.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://writeblock.app/"/>
   </url>
   <url>
     <loc>https://writeblock.app/privacy.html</loc>
