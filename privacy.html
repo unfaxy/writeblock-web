@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Writeblock</title>
-  <meta name="description" content="Writeblock Privacy Policy. We have no servers and never receive your writing. The only data we collect is anonymous, consent-based usage analytics.">
+  <meta name="description" content="Writeblock Privacy Policy. We have no servers and never receive your writing. The only data we collect is anonymous usage analytics and error diagnostics.">
   <meta property="og:title" content="Privacy Policy — Writeblock">
-  <meta property="og:description" content="We have no servers and never receive your writing — only anonymous, consent-based usage analytics.">
+  <meta property="og:description" content="We have no servers and never receive your writing — only anonymous usage analytics and error diagnostics.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://writeblock.app/privacy.html">
   <meta property="og:image" content="https://writeblock.app/og-image.png">
@@ -15,7 +15,7 @@
   <meta property="og:locale:alternate" content="ko_KR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Privacy Policy — Writeblock">
-  <meta name="twitter:description" content="We have no servers and never receive your writing — only anonymous, consent-based usage analytics.">
+  <meta name="twitter:description" content="We have no servers and never receive your writing — only anonymous usage analytics and error diagnostics.">
   <meta name="twitter:image" content="https://writeblock.app/og-image.png">
   <link rel="canonical" href="https://writeblock.app/privacy.html">
   <link rel="alternate" hreflang="en" href="https://writeblock.app/privacy.html">
@@ -227,7 +227,7 @@
       <div class="content">
         <span class="eyebrow">Legal</span>
         <h1 class="serif">Privacy Policy</h1>
-        <p class="last-updated">Last updated: June 24, 2026</p>
+        <p class="last-updated">Last updated: July 24, 2026</p>
       </div>
     </div>
   </header>
@@ -239,13 +239,13 @@
 
         <div class="summary-box">
           <span class="eyebrow">In short</span>
-          <p>Your writing stays on your device &mdash; and, with iCloud Sync on, in your own private iCloud that even we can't read. We have no servers of our own; the only data we ever receive is anonymous usage analytics, never your writing, photos, or audio. You can turn it off anytime in Settings.</p>
+          <p>Your writing stays on your device &mdash; and, with iCloud Sync on, in your own private iCloud that even we can't read. We have no servers of our own; the only data we ever receive is anonymous usage analytics and error diagnostics, never your writing, photos, or audio. You can turn it off anytime in Settings.</p>
         </div>
 
         <section>
           <h2 class="serif">Overview</h2>
           <p>Writeblock ("we," "our," or "the app") is a habit-forming journaling app that blocks selected apps until you write a journal entry. This Privacy Policy explains how we handle your information.</p>
-          <p>The short version: we have no servers of our own and no user accounts. Your diary entries live on your device and, if you enable iCloud Sync, in your personal iCloud account managed by Apple, which we cannot read. The only data that leaves your device for us is anonymous, aggregate usage analytics &mdash; and you can switch it off.</p>
+          <p>The short version: we have no servers of our own and no user accounts. Your diary entries live on your device and, if you enable iCloud Sync, in your personal iCloud account managed by Apple, which we cannot read. The only data that leaves your device for us is anonymous, aggregate usage analytics and anonymous error diagnostics &mdash; and you can switch them off.</p>
         </section>
 
         <section>
@@ -267,13 +267,17 @@
             <li>No advertising identifiers</li>
             <li>No device fingerprinting</li>
             <li>No cross-app or cross-site tracking</li>
-            <li>No crash reporting to external services</li>
             <li>No user accounts or registration</li>
             <li>Your diary content, photos, and audio never leave your device</li>
           </ul>
 
           <h3 class="serif">Anonymous Usage Analytics</h3>
-          <p>To understand how people use the app and where they get stuck, Writeblock can send <strong>anonymous, aggregate funnel events</strong> (such as "onboarding started", "first entry saved", or "purchase completed") to PostHog. We ask for your consent right after onboarding &mdash; analytics stay off unless you allow them. These events:</p>
+          <p>To understand how people use the app and where they get stuck, Writeblock can send <strong>anonymous, aggregate funnel events</strong> (such as "onboarding started", "first entry saved", or "purchase completed") to PostHog. Whether they are on by default depends on your region:</p>
+          <ul>
+            <li><strong>In the EU/EEA, the UK, and Switzerland</strong>, analytics stay <strong>off</strong> until you allow them &mdash; we ask for your consent right after onboarding.</li>
+            <li><strong>Everywhere else</strong>, analytics are <strong>on by default</strong>, and you can turn them off anytime in Settings.</li>
+          </ul>
+          <p>Your region is determined on your device only &mdash; from your App Store storefront and device region setting, never from your IP address. If we can't tell, we play it safe and ask for consent first. These events:</p>
           <ul>
             <li>Contain <strong>no diary content and no personally identifiable information</strong></li>
             <li>Use an anonymous identifier &mdash; no personal profile is created, and we cannot link events back to your identity</li>
@@ -283,13 +287,14 @@
             <li>Are hosted in the EU</li>
             <li>Can be turned off anytime in <strong>Settings &rarr; "Send anonymous usage stats"</strong></li>
           </ul>
+          <p>The same channel also carries <strong>anonymous error and crash diagnostics</strong> &mdash; when something goes wrong (a save fails, a purchase can't complete, or the app crashes), a technical report (error type, error code, and stack trace) is sent so we can find and fix the problem. These reports contain no diary content and no personally identifiable information, and they follow the same regional defaults and the same Settings toggle as everything above.</p>
         </section>
 
         <section>
           <h2 class="serif">Third-Party Services</h2>
-          <p>Writeblock uses <strong>one</strong> third-party SDK &mdash; <strong>PostHog</strong>, for the anonymous usage analytics described above (EU-hosted, consent-based &mdash; off until you allow it, and you can toggle it anytime in Settings). Everything else is built with Apple's native frameworks:</p>
+          <p>Writeblock uses <strong>one</strong> third-party SDK &mdash; <strong>PostHog</strong>, for the anonymous usage analytics described above (EU-hosted; off until you opt in if you're in the EU/EEA/UK/Switzerland, on by default elsewhere &mdash; and you can toggle it anytime in Settings). Everything else is built with Apple's native frameworks:</p>
           <ul>
-            <li><strong>PostHog</strong> &mdash; anonymous usage analytics only (no diary content, no PII)</li>
+            <li><strong>PostHog</strong> &mdash; anonymous usage analytics and error/crash diagnostics only (no diary content, no PII)</li>
             <li><strong>SwiftUI</strong> &mdash; user interface</li>
             <li><strong>Core Data</strong> &mdash; local storage</li>
             <li><strong>Screen Time API / FamilyControls</strong> &mdash; app blocking</li>
@@ -342,7 +347,7 @@
             <li>Diary entries are stored in Core Data on your device</li>
             <li>Your App Lock PIN is stored in the iOS Keychain, accessible only on your device while it is unlocked</li>
             <li>iCloud data (if enabled) is encrypted by Apple</li>
-            <li>The only data sent to us is anonymous usage analytics (to PostHog, EU-hosted); your diary content is never sent to us &mdash; with iCloud Sync on, it syncs only to your own Apple iCloud account, which we cannot read</li>
+            <li>The only data sent to us is anonymous usage analytics and error diagnostics (to PostHog, EU-hosted); your diary content is never sent to us &mdash; with iCloud Sync on, it syncs only to your own Apple iCloud account, which we cannot read</li>
           </ul>
         </section>
 
