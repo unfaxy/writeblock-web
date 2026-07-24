@@ -19,7 +19,7 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 ## Features
 
 - **No account needed**: Install and start immediately
-- **Privacy-first**: No servers of our own, no ads. Your journal stays on your device; only anonymous, opt-out usage analytics ever leave it
+- **Privacy-first**: No servers of our own, no ads. Your journal stays on your device; only anonymous usage analytics ever leave it (consent-gated in the EU/EEA/UK/CH, opt-out elsewhere)
 - **App Lock & iCloud sync (free)**: Protect the app with Face ID or a PIN and back up across devices — no upgrade required
 - **Photos & voice**: Attach photos or record voice memos alongside your journal
 - **Streak tracking**: Track your daily journaling streak
@@ -42,5 +42,5 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 - Platform: iOS (16+)
 - Built with: Swift, SwiftUI
 - Data storage: On-device (Core Data), optional iCloud sync (free, on by default)
-- No backend servers of our own, no Firebase, no ads — one analytics SDK (PostHog: anonymous, EU-hosted, opt-out) for funnel metrics; diary content and PII are never sent
+- No backend servers of our own, no Firebase, no ads — one analytics SDK (PostHog: anonymous, EU-hosted; consent-gated in the EU/EEA/UK/CH, opt-out elsewhere) for funnel metrics; diary content and PII are never sent
 - Screen Time API for app blocking
