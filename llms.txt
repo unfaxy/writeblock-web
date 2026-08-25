@@ -29,7 +29,7 @@ Writeblock is an iOS app that locks your dopamine apps (social media, games, etc
 ## Pricing
 
 - **Free forever**: Unlimited journaling (photos & voice), streaks, calendar, search, App Lock (Face ID/PIN), iCloud sync, all themes, and export
-- **App Blocking ($9.99 one-time)**: Block any apps you choose and unlock them by journaling. Free for the first week, then a single non-consumable purchase — no subscription
+- **App Blocking ($9.99 one-time)**: Block any apps you choose and unlock them by journaling. Free for two weeks, then a single non-consumable purchase — no subscription
 
 ## Links
 
